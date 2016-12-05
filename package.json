@@ -1,0 +1,25 @@
+{
+  "name": "mongoscrape",
+  "version": "1.0.0",
+  "description": "Using Mongoose and Cheerio scrape news from another site. The web app lets users leave comments on the latest news.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnaumoski/mongoScrape.git"
+  },
+  "keywords": [
+    "mongoDB",
+    "mongoose",
+    "web",
+    "scraping"
+  ],
+  "author": "MN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mnaumoski/mongoScrape/issues"
+  },
+  "homepage": "https://github.com/mnaumoski/mongoScrape#readme"
+}
