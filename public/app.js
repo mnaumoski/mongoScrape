@@ -3,7 +3,7 @@ $.getJSON('/articles', function(data) {
   // for each one
   for (var i = 0; i<data.length; i++){
     // display the apropos information on the page
-    $('#articles').append('<p data-id="' + data[i]._id + '">'+ data[i].title + '<br />'+ data[i].link + '</p>');
+    $('#articles').append('<h3>' + data[i].title +'</h3>' + '<br>' +'<p class= "panel" data-id="' + data[i]._id + '">' + '<br />'+ data[i].paragraph + '<br />' +"<a href='https://reactjsnews.com" + data[i].link + "'>"+ "Take me to React.js News</a>" + '</p>' + '<br>');
   }
 });
 
@@ -24,11 +24,11 @@ $(document).on('click', 'p', function(){
     .done(function( data ) {
       console.log(data);
       // the title of the article
-      $('#notes').append('<h2>' + data.title + '</h2>'); 
+      $('#notes').append('<h3>' + data.title + '</h3>'); 
       // an input to enter a new title
-      $('#notes').append('<input id="titleinput" name="title" >'); 
+      $('#notes').append('<input id="titleinput" placeholder="Write title here.." name="title" >'); 
       // a textarea to add a new note body
-      $('#notes').append('<textarea id="bodyinput" name="body"></textarea>'); 
+      $('#notes').append('<textarea id="bodyinput" placeholder="Write here.." name="body"></textarea>'); 
       // a button to submit a new note, with the id of the article saved to it
       $('#notes').append('<button data-id="' + data._id + '" id="savenote">Save Note</button>');
 

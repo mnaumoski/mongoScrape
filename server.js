@@ -30,7 +30,7 @@ db.on('error', function(err) {
 
 // once logged in to the db through mongoose, log a success message
 db.once('open', function() {
-  console.log('Mongoose connection successful.');
+  console.log('Mongoose connection successful like a boss.');
 });
 
 
