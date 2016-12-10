@@ -1,0 +1,3 @@
+mlab:
+
+mongodb://heroku_kb9r824s:ou3h0hj0c3ctltkhfjghfuull5@ds119588.mlab.com:19588/heroku_kb9r824s

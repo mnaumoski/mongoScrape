@@ -20,7 +20,8 @@ app.use(express.static('public'));
 
 
 // Database configuration with mongoose
-mongoose.connect('mongodb://localhost/webScraping');
+// mongoose.connect('mongodb://localhost/webScraping');
+mongoose.connect("mongodb://heroku_kb9r824s:ou3h0hj0c3ctltkhfjghfuull5@ds119588.mlab.com:19588/heroku_kb9r824s");
 var db = mongoose.connection;
 
 // show any mongoose errors
